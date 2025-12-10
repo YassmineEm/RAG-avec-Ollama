@@ -1,0 +1,14 @@
+langchain
+langchain-core
+langchain-text-splitters
+langchain-community
+langchain-ollama
+chromadb
+fastapi
+uvicorn[standard]
+python-multipart
+pypdf
+tiktoken
+streamlit
+requests
+pydantic
