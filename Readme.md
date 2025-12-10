@@ -12,28 +12,32 @@ Ce projet met en place un système **RAG (Retrieval-Augmented Generation)** util
 ollama serve
 Créer et activer un environnement Python virtuel :
 
-bash
-Copier le code
+```bash
+
 python -m venv .venv
 Sur Linux / macOS :
 
-bash
-Copier le code
+```bash
+
 source .venv/bin/activate
+
+
 Sur Windows PowerShell :
 
-bash
-Copier le code
+```bash
 .venv\Scripts\Activate.ps1
+
+
 Installer les dépendances :
 
-bash
-Copier le code
+```bash
+
 pip install -r requirements.txt
+
+
 Placer les fichiers PDF IPCC dans le dossier data/ :
 
-kotlin
-Copier le code
+```bash
 data/
 ├── AR6_SYR_Full.pdf
 ├── AR6_SYR_SPM.pdf
@@ -41,21 +45,22 @@ data/
 🚀 Run
 Ingestion des documents :
 
-bash
-Copier le code
+```bash
+
 python ingest.py
+
 Créer les embeddings et stocker dans la base vectorielle :
 
-bash
-Copier le code
+```bash
+
 python embeddings.py
+
 Démarrer l’API FastAPI :
 
-bash
-Copier le code
+```bash
 uvicorn app:app --reload --port 8000
+
 Lancer l’interface Streamlit :
 
-bash
-Copier le code
+```bash
 streamlit run uistreamlit.py
